@@ -1,0 +1,39 @@
+QLabel#name, QLabel#email{
+    color : rgb(0, 128, 137);
+}
+
+QLabel#log {
+        background-color: rgb(255, 255, 255);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+}
+
+
+QLineEdit{
+    border: none;
+    border-radius: 5px;
+    color:rgb(0, 66, 94);
+    border-bottom: 2px solid rgb(0, 90, 116);
+}
+
+
+QLineEdit:hover{
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(42, 201, 229);
+}
+
+QLineEdit:focus {
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(26, 203, 79);
+}
+
+QLabel {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+HyperlinkButton{
+    color: rgba(59, 94, 110, 0.5)
+}
