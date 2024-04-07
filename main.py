@@ -44,4 +44,4 @@ parameters_train = {
 """x_values = np.concatenate((x_values, x_values, x_values, x_values, x_values), axis= 0)
 print(x_values.shape)"""
 
-print(neural.backpropagation(x_values, real_ouputs, 0.01))
+print(neural.forward_propagation(x_values))
