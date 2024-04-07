@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="container" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>561</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>ori1Uni</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(73, 168, 53);
+	border-radius: 5px;
+	color: rgb(194, 248, 189);
+}
+
+QPushButton:hover{
+	background-color: rgb(143, 240, 164);
+	border-radius: 5px;
+}</string>
+   </property>
+   <widget class="QLabel" name="atom">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>251</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(245, 245, 245);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="frame_log" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-40</y>
+      <width>311</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(182, 255, 156, 130), stop:1 rgb(74, 179, 36, 150));
+border-radius: 10px;</string>
+    </property>
+    <widget class="QLabel" name="name_title">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 85, 21)</string>
+     </property>
+     <property name="text">
+      <string>Processing Movie</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::MarkdownText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nom_bas">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>251</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Ubuntu</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(1, 133, 18);
+background-color: transparent;</string>
+     </property>
+     <property name="text">
+      <string>Gradi Joel kappachikatsi@gmail.com</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="valider_connexion">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>300</y>
+      <width>151</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>ori1Uni</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>se Connecter</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>100</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>200</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yrsa</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: rgb(32, 134, 4);
+	margin-left: 20px;
+	height : 20px;
+}</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>60</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 15px;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="gridFrame">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>170</y>
+      <width>221</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 255, 247);
+padding: 5px;</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QLabel" name="name_label_2">
+       <property name="font">
+        <font>
+         <family>Suranna</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: green;</string>
+       </property>
+       <property name="text">
+        <string>Name : </string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="email_label">
+       <property name="font">
+        <font>
+         <family>Suranna</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: green;</string>
+       </property>
+       <property name="text">
+        <string>Email : </string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="email_edit">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-bottom: 2px solid greenyellow;
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>email</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="name_edit">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Yrsa</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-bottom: 2px solid greenyellow;
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>name</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
