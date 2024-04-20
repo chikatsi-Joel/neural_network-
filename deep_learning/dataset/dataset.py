@@ -36,6 +36,6 @@ def make_data_set_load_iris() -> tuple[list]:
     train_data = data_frame[:train_size]
     test_data = data_frame[train_size:]
 
-    return value, targ, target_names
+    return np.array(value), [target_names[val] for val in target], np.array(target_names)
 
 

@@ -27,7 +27,7 @@ class Activation(Enum) :
         
         else :
             return np.exp(values) / np.sum(np.exp(values))
-        
+    
 
     def calcul_derivate(self, values : np.ndarray) -> np.ndarray :
         if self.name == 'SIGMOID' :

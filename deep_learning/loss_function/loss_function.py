@@ -20,6 +20,7 @@ class Loss_function(Enum) :
         
         elif self.name == "MSE" :
             return np.sum(np.power(real_ouputs - fake_ouputs, 2)) / len(fake_ouputs)
+        
  
     def calculate_derivate(self, fake_ouputs : np.ndarray, real_ouputs : np.ndarray) :
         if self.name == "ENTROPIE" :

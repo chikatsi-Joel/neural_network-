@@ -10,6 +10,7 @@ from  .loss_function.loss_function import Loss_function
 
 class Neural_network() :
 
+
     @singledispatchmethod
     def __init__( self, nbre_features : tuple[int], list_layers : list[Dense], loss_function : Loss_function ) :
         """
@@ -20,7 +21,15 @@ class Neural_network() :
         self.__loss_function = loss_function
         self.inputs_shape = nbre_features
 
+        """
+            self.memory :
+                list :
     
+                    keys : "A_prev", "grad"
+                    values : A_prev, grad
+        """
+        self.memory = []
+
 
     @property
     def loss_function(self) -> Loss_function:
@@ -46,8 +55,9 @@ class Neural_network() :
         
     def forward_propagation(self, inputs : np.ndarray) -> np.ndarray :
 
-        for layer in self.list_layers :
+        for i, layer in enumerate(self.list_layers) :
             inputs = layer(inputs)
+            self.memory.append({"A_prev" : inputs})
             
         return inputs
     
@@ -55,16 +65,11 @@ class Neural_network() :
         fake_ouputs = self.forward_propagation(inputs)
         layer_ouput = self.list_layers[-1]
 
-        print(fake_ouputs)
-        print(layer_ouput.activation.calcul_derivate(fake_ouputs))
-
-        gradient = (real_ouputs - fake_ouputs) * layer_ouput.activation.calcul_derivate(fake_ouputs) * inputs 
+        gradient = (real_ouputs - fake_ouputs) * layer_ouput.activation.calcul_derivate(fake_ouputs) * self.memory[-2]['A_prev']
         
         return gradient
         
 
-    
-        
     def fit(
         self,
         x_values : list,
@@ -91,3 +96,9 @@ class Neural_network() :
                 print(f"loss : {loss} \n")
 
 
+
+    def plot_essential_data_train(self) :
+        """
+            Dessiner les diagrammes de l'entrainement...
+        """
+        
